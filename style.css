@@ -1,0 +1,178 @@
+*{
+    margin: 2px;
+    padding: 0;
+    justify-content: center;
+}
+@font-face {
+    font-family: myFont;
+    src: url(Phineas\ y\ Ferb.ttf);
+}
+/*PROFILE*/
+
+.prof{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.4) 37%, rgba(4,158,187,0.4682247899159664) 81%),url('img/HD-wallpaper-phineas-n-ferb-iqoo3-orange-iqoo-iqoo-3-candace-disney-phineas-and-ferb-thumbnail-removebg-preview.png');
+    padding: 80px;
+    border-radius: 25px;
+}
+.prof img{
+    display: block;
+    margin:auto;
+    width: 250px;
+    height: 250px;
+    border: 9px double #FF3F2B;
+    border-radius: 50%;
+}
+.prof img:hover{
+    background-color: rgb(241, 231, 231);
+}
+.prof h1{
+    background: none;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 80px;
+    font-family: myFont;
+    letter-spacing: 2px;
+    color: #FF3F2B;
+    font-weight: 900;
+
+}
+/*CONTENT*/
+
+body{
+    background-color:#FFBD2B;
+}
+.inner{
+    background-image:linear-gradient(rgba(255,255,255,0.4) 37%, rgba(4,158,187,0.4682247899159664) 81%),url('img/Phineas-Ferb-background-phineas-and-ferb-39466596-1920-1080.jpg');
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin: auto;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #888888;
+}
+h2{
+    margin: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 29.5px;
+    font-family: myFont;
+    font-weight: 800;
+    color: #FF3F2B;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+}
+ul{
+    display: table;
+    margin: 20px auto;
+}
+ul li{
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+/*BIG PICTURE*/
+img{
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px  rgba(255, 100, 0, 0.8);
+    width: 60%;
+    height: auto;
+}
+/*FRIENDS*/
+#friend img{
+    width: 380px;
+    height: 380px;
+    box-shadow: 0 5px 20px rgba(219, 82, 2, 0.4);
+    margin-bottom: 15px;
+}
+.friends{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    cursor: pointer;
+}
+.friends #friend img:hover{
+    transform: scale(1.04);
+    transition: all .4s ease-in;
+    box-shadow: none;
+}
+#friend p{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #FF3F2B;
+    transition: .69s ease;
+}
+#friend p:hover{
+    text-decoration: underline #ff5406;
+}
+footer{
+    margin-top: 20px;
+}
+footer p{
+    padding: 6px;
+    border-radius: 5px;
+}
+footer p, a{
+    background-color: #49C6DD;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+@media (max-width:1340px){
+img{
+    width: 80%;
+}
+.inner{
+    width: 95%;
+}
+
+.friends{
+    justify-content: center;
+}
+.friends img{
+    max-width:90%
+}
+}
+@media (max-width:981px){
+.prof{
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+}
+.friends{
+    display: block;
+    justify-content: center;
+}
+.friends img{
+    max-width:60%;
+}
+}
+@media (max-width: 444px){
+.prof{
+    padding: 0px;
+    width: 100%;
+}
+.inner{
+    display: block;
+    margin: auto;
+}
+h2{
+    font-size: 32px;
+}
+ul li{
+    list-style: none;
+}
+p, ul li{
+    font-size: 18px;
+}
